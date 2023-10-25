@@ -10,16 +10,16 @@ chrome_options = Options()
 
 url = 'https://bida.utm.my/User/Pembida/SemakNombor.aspx'
 
-num_counter = 5000 #specify a start number
-end_range = 5100 #specify end of range
+num_counter = 750 #specify a start number
+end_range = 755 #specify end of range
 
 julat_asal = num_counter
 
 belum_jual_list = []
 
-driver = webdriver.Chrome(service=Service("./chromedriver"))
+driver = webdriver.Chrome(service=Service("./chromedriver.exe"))
 
-while num_counter < end_range:
+while num_counter <= end_range:
     driver.get(url)
     sleep(1)
 
