@@ -31,7 +31,7 @@ while num_counter <= end_range:
     sleep(2)
 
     try:
-        driver.find_element(By.XPATH, """/html/body/form/main/section/div/div[2]/div/div[5]/div/div/h3/span/span""") # find belum jual element text
+        driver.find_element(By.XPATH, """/html/body/form/main/section/div/div[2]/div/div[3]/div[3]/div""") # find belum jual element text
     except NoSuchElementException:
         pass
     else:
